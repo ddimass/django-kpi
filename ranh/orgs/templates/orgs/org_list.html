@@ -1,0 +1,8 @@
+<h1>Organisations</h1>
+<ul>
+{% for orgs in object_list %}
+    <li>{{ orgs.name }}</li>
+{% empty %}
+    <li>No organisations yet.</li>
+{% endfor %}
+</ul>
